@@ -11,12 +11,8 @@
   "scripts": {
     "start": "echo Starting with: npm run dev... && npm run dev",
     "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' src/test.ts",
-    "postinstall": "node scripts/postinstall.js && npm run build",
-    "build": "npm run build:ts && npm run build:whisper",
-    "build:ts": "tsc && chmod +x dist/download.js",
-    "build:whisper": "node scripts/build-whisper.js",
-    "prepare": "node scripts/prepare.js",
-    "clean": "rm -rf dist lib/whisper.cpp/build lib/whisper.cpp/main",
+    "postinstall": "node scripts/postinstall.js",
+    "build": "npx tsc && chmod +x dist/download.js",
     "test": "node dist/test.js"
   },
   "devDependencies": {

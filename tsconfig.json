@@ -14,9 +14,6 @@
   "exclude": [
     "node_modules",
     "dist",
-    "lib/**/*",
-    "**/build/**",
-    "**/*.spec.ts",
-    "**/*.test.ts"
+    "lib"
   ]
 }
