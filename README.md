@@ -25,7 +25,12 @@ npm install whisper-node
 
 ```bash
 cd node_modules/whisper-node
+
+# Step 2.1: Compile TypeScript
 npm run build
+
+# Step 2.2: Compile whisper.cpp (C++)
+cd lib/whisper.cpp && make
 ```
 
 This will compile TypeScript and whisper.cpp (may take 2-5 minutes).
