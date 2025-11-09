@@ -3,7 +3,7 @@ import shell from 'shelljs';
 
 // docs: https://github.com/ggerganov/whisper.cpp
 const WHISPER_CPP_PATH = path.join(__dirname, '..', 'lib/whisper.cpp');
-const WHISPER_CPP_MAIN_PATH = "./main";
+const WHISPER_CPP_MAIN_PATH = "./whisper-cli";
 
 export interface IShellOptions {
   silent: boolean, // true: won't print to console
