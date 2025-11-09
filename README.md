@@ -13,19 +13,36 @@ Node.js bindings for OpenAI's Whisper. Transcription done local.
 
 ## Installation
 
-1. Add dependency to project
+> ⚠️ **Important:** After installation, you must build the package before use.
 
-```text
+1. Install the package
+
+```bash
 npm install whisper-node
 ```
 
-2. Download whisper model of choice [OPTIONAL]
+2. Build the package (Required)
 
-```text
+```bash
+cd node_modules/whisper-node
+npm run build
+```
+
+This will compile TypeScript and whisper.cpp (may take 2-5 minutes).
+
+3. Download whisper model of choice [OPTIONAL]
+
+```bash
 npx whisper-node download
 ```
 
-[Requirement for Windows: Install the ```make``` command from here.](https://gnuwin32.sourceforge.net/packages/make.htm)
+### Requirements
+
+- **macOS**: `xcode-select --install`
+- **Linux**: `sudo apt-get install build-essential`
+- **Windows**: Install [make](https://gnuwin32.sourceforge.net/packages/make.htm)
+
+For more details, see [INTEGRATION.md](./INTEGRATION.md)
 
 ## Usage
 

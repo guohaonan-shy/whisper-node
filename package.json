@@ -12,7 +12,7 @@
     "start": "echo Starting with: npm run dev... && npm run dev",
     "dev": "NODE_ENV='development' nodemon --watch './**/*.ts' --exec 'ts-node' src/test.ts",
     "postinstall": "node scripts/postinstall.js",
-    "build": "npx tsc && chmod +x dist/download.js && node scripts/build-whisper.js",
+    "build": "npx tsc && chmod +x dist/download.js",
     "test": "node dist/test.js"
   },
   "devDependencies": {
