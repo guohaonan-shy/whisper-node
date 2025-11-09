@@ -1,5 +1,6 @@
 import path from "path";
 import shell from 'shelljs';
+shell.config.execPath = process.execPath;
 
 // docs: https://github.com/ggerganov/whisper.cpp
 const WHISPER_CPP_PATH = path.join(__dirname, '..', 'lib/whisper.cpp');
